@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    background-color: #ecf0f1;
+    font-weight: bold;
+  }
+  
+  /* Forms */
+  .form-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: border 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #2980b9;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #3498db;
+    margin-left: 25%;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Cards */
+  .card-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  /* Search Page */
+  .search {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
